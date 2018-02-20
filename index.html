@@ -12,14 +12,16 @@
     <p>Welcome to the page about all the coolest animals</p>
 
     <div class ="container">
-      <select class="form-control" id="animal">
-        <option>Snakes</option>
-        <option>Turtles</option>
-        <option>Insects</option>
-      </select>
-      <button type="button" class="btn btn-success">Make Your Choice</button>
-    </div>
-    <div class="container">
+      <div id="animal">
+        <form>
+          <select class="form-control" id="choice">
+            <option>Snakes</option>
+            <option>Turtles</option>
+            <option>Insects</option>
+          </select>
+          <button type="submit" class="btn btn-success">Make Your Choice</button>
+        </form>
+      </div>
       <div class="row">
         <div id="snakes" class="col-md-4">
           <h3>Snakes</h3>
@@ -35,5 +37,8 @@
           <h3>Lady Bug</h3>
           <img src="img/ladybug.jpeg" alt="a ladybug">
           <p>Boy, aren't these little guys cute. Eat all the aphids!! YEAHH!</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

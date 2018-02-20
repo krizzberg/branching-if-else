@@ -1,13 +1,16 @@
 $(document).ready(function() {
-  $("#animals").submit(function(event) {
-    var animal = $("#animal").val();
+  $("#animal").submit(function(event) {
+    var animal = $("#choice").val();
 
-    if (animal === Snakes) {
+    if (animal === 'Snakes') {
       $('#snakes').show();
-    } else if (animal === Turtles) {
+      $('#turtles, #insects').hide();
+    } else if (animal === 'Turtles') {
       $('#turtles').show();
+      $('#snakes, #insects').hide();
     } else {
       $('#insects').show();
+      $('#snakes, #turtles').hide();
     }
 
     event.preventDefault();
